@@ -4,6 +4,11 @@ public class Student extends Main {
     public String name;
     public String studentNum;
 
+    Student (String name, String studentNum){
+        this.name = name;
+        this.studentNum = studentNum;
+    }
+
     public String toString() {
         return "Student : " + name + " "  + studentNum;
     }
