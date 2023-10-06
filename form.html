@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function checkValue(){
+            var userid = document.form1.userid.value;
+            var pwd = document.form1.pwd.value;
+
+            if(userid ==''){
+                alert("Userid 입력하세요!!!");
+                userid.focus();
+                return 0;
+            }
+
+            if(pwd ==''){
+                alert("password 입력하세요!!!");
+                pwd.focus();
+                return 0;
+            }
+        }
+
+    </script>
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <form name="form1" method="post" action="form_ok.php">
+        Userid : <input type="text" name="userid"><br>
+        password : <input type="text" name="pwd"><br>
+        <input type="button" value="로그인" onclick="checkValue()">
+        <img src="./pencil.png" width="40">
+
+    </form>
+
+</body>
+</html>
